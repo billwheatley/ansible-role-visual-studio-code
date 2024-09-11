@@ -1,6 +1,6 @@
 # code: language=ansible
 ---
-- name: Install VS Code repo (dnf)
+- name: Install VS Code repo (dnf5)
   become: true
   ansible.builtin.yum_repository:
     name: code
@@ -11,7 +11,7 @@
     gpgcheck: '{{ visual_studio_code_gpgcheck }}'
   when: not visual_studio_code_skip_add_repo
 
-- name: Install VS Code (dnf)
+- name: Install VS Code (dnf5)
   become: true
   ansible.builtin.dnf:
     name: "{{ visual_studio_code_package }}{{ (visual_studio_code_version | length > 0) | ternary('-' + visual_studio_code_version, '') }}"
