@@ -1,11 +1,16 @@
 Ansible Role: Visual Studio Code
 ================================
 
-[![Tests](https://github.com/gantsign/ansible-role-visual-studio-code/workflows/Tests/badge.svg)](https://github.com/gantsign/ansible-role-visual-studio-code/actions?query=workflow%3ATests)
-[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.visual--studio--code-blue.svg)](https://galaxy.ansible.com/gantsign/visual-studio-code)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-visual-studio-code/master/LICENSE)
 
 Role to install the [Visual Studio Code](https://code.visualstudio.com) IDE / text editor.
+
+billwheatley's Fork Notes
+--------------------------
+This fork adds compatability with dnf ver 5 which ansible facts reports as `dnf5`. Where as earlier dnf versions where reported as simply `dnf`.  
+The upstream role (at the time of forking) will reject based dnf ver 5 based distros because it doesn't understand `dnf5` as an ansible fact. 
+Where as this fork allows dnf5 and has a dnf5 task file (which is identical to the old dnf).
+DNF ver 5 was introduced in Fedora 41.
 
 Requirements
 ------------
@@ -30,12 +35,22 @@ Requirements
         * Fedora
 
             * 35
+            * 41
+            * 42
+              
+        * Nobara
+            * 40
+            * 41
 
     * SUSE Family
 
         * openSUSE
 
             * 15.3
+
+    * OpenMandriva
+      
+        * Rome (circa June 2025)
 
     * Note: other versions are likely to work but have not been tested.
 
