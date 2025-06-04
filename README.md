@@ -192,7 +192,11 @@ Author Information
 ------------------
 
 John Freeman
-Bill Wheatley
 
 GantSign Ltd.
 Company No. 06109112 (registered in England)
+
+
+Bill Wheatley
+
+Random dude from the US
