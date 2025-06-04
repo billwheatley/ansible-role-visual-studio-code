@@ -188,14 +188,16 @@ License
 
 MIT
 
-Author Information
-------------------
+Orginal Author Information
+--------------------------
 
 John Freeman
 
 GantSign Ltd.
 Company No. 06109112 (registered in England)
 
+Fork Author Information
+------------------------
 
 Bill Wheatley
 
