@@ -12,6 +12,14 @@ The upstream role (at the time of forking) will reject based dnf ver 5 based dis
 Where as this fork allows dnf5 and has a dnf5 task file (which is identical to the old dnf).
 DNF ver 5 was introduced in Fedora 41.
 
+Other then that this fork is the same.
+
+NOTE: I have not published this on Ansible Galaxy, I just to do a git repo fetch in my `requirements.yaml` file
+
+```yaml
+- src: https://github.com/billwheatley/ansible-role-visual-studio-code.git
+```
+
 Requirements
 ------------
 
@@ -153,7 +161,7 @@ Playbook with extensions installed that overwrites settings and keybindings:
           ]
 ```
 
-More Roles From GantSign
+More Roles From GantSign (upstream)
 ------------------------
 
 You can find more roles from GantSign on
@@ -184,6 +192,7 @@ Author Information
 ------------------
 
 John Freeman
+Bill Wheatley
 
 GantSign Ltd.
 Company No. 06109112 (registered in England)
