@@ -43,9 +43,8 @@ def install_extension(module, executable, name):
         # found)
         rc, out, err = module.run_command(
             [executable, '--install-extension', name, '--force'])
-        # Whitelist: [DEP0005] DeprecationWarning: Buffer() is deprecated due
-        # to security and usability issues.
-        if rc != 0 or (err and '[DEP0005]' not in err):
+
+        if rc != 0:
             module.fail_json(
                 msg='Error while upgrading extension [%s]: (%d) %s' %
                 (name, rc, out + err))
